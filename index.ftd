@@ -1,0 +1,130 @@
+-- import: fastn-community.github.io/opensans-typography as opensans
+
+-- ftd.column:
+width: fill-container
+height: fill-container
+align-content: center
+types: $opensans.types
+background.image: $bg-image
+
+-- ftd.column:
+width.fixed.px: 832
+height.fixed.px: 740
+align-content: center
+
+
+-- player: RAGHAV SRIVASTAVA
+dp: https://lh3.googleusercontent.com/pw/AJFCJaXmv_OozbnJGyPWsRqDo70TvBt-hzRQFBtNoKGd5HbOu1gm4RxYIjY2IvsSPr3ZXBHHCzrQaADNShJ-SU4Ay6KDxrXk7UIlhJsjXFaKGLUkIsUmW8qK9nwfso92OniJKEI4u8VxNO7IOzWc5lkp_X-hKa3d5FS95FmvCmklLppWfWodKoN3oD9Z-UM7KP5whVxD9jpvWhCjfeTD36rSxQTFNvdB8nGKAtPZQOOOwKnyX4hx9pAzMTlQ7sKYPw9Mg-Kwzo17fu5SP7L3fTOlgIGTsc8GB7v3W-Mc8itQ5H_sJkNYa4FYaUeHnngZTGnarQAbmyNTmorJt1eDRMWv2awRiE0d8BEOeDsEUak6x83LPtMRxOOlw0xcae90cFawxCckt9iToaNBZbHe8qvMsBhPSIWFvGRpNN4KHz6A_p8u96mWZGaNMKCcmGLz3rcgS7jiZEaJ7NfsfxEcXcmhiUtLHNy5pTXAFDwMYYmwlhblYeuqrxThVE4wmZ6UyFUY8Xkn8RKHugTkXXfzIGgYdpIAyV6kWjbz61uztxVrp0Ck1a4XAKAoHQ5hKoZY8-XSG3BWM67Ou47mco0OV_CFMfJDsFDUCrg0uMiHMAKVROzf2wPU9EIW9T2ufaFAmrsHO7oxAIlcb5dewBuys5-Y1B6NL5_gCso0QgLzSfJX0H0OX7Y89z-hYua5p1R7zn7A3nS2stSZVawSsN_luLTPwNZWLIDaBckEH3NzwqvG4-BZu4DQH1BLmEt4eVoREU4YpukdvfSSeh8sD9rETF-ghzi_a5iYN_pP-OHa1WDs7ckRooT8w4vQQUq1C5pu7nA5USenKDPWNwgztGaxGJchmttyeDv4IpOBqWTZHanLQyJShif2-bH2wj4u8WTRIyDuRZKOfQZRpvyJjcQyaWDD1jZGonA=w1172-h1562-s-no?authuser=0
+
+I am a God
+
+-- ftd.column:
+spacing.fixed.px: 10
+margin-top.px: 60
+width: fill-container
+
+
+-- button: LinkedIn
+link: https://www.linkedin.com/in/ajit-garg-319167190/
+
+-- button: Instagram
+   
+
+-- button: Facebook
+
+-- button: Twitter
+
+
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+
+
+
+
+
+
+-- component player:
+caption title:
+optional ftd.image-src dp:
+optional body body:
+ftd.color border-color: black
+
+-- ftd.column:
+width.fixed.px: 341 
+height.fixed.px: 241
+padding-bottom.px: 10
+align-content: center
+
+-- ftd.image: $player.dp
+width.fixed.px: 118 
+height.fixed.px: 118
+border-radius.px: 60
+margin-bottom.px: 20
+border-color: $player.border-color
+border-width.px: 5
+
+-- ftd.text: $player.title
+role: $inherited.types.heading-large
+color: white
+
+-- ftd.text: $player.body
+role: $inherited.types.copy-regular
+color: white
+
+-- end: ftd.column
+
+-- end: player
+
+
+
+
+
+
+
+-- component button:
+caption title:
+optional string link:
+ftd.color text-color: $inherited.colors.text-strong
+ftd.color border-color: gold
+
+-- ftd.row:
+align-content: center
+width: fill-container
+border-radius.px: 40
+height.fixed.px: 82
+border-width.px: 2
+background.solid: white
+border-color: $button.border-color
+
+
+-- ftd.text: $button.title
+link: $button.link
+padding.px: 10
+style: bold
+text-align: center
+color: $button.text-color
+role: $inherited.types.copy-regular
+
+
+
+-- end: ftd.row
+
+-- end: button
+
+
+
+\;; record variable : https://fastn.com/common-attributes/#background-image-ftd-background-image
+
+
+-- ftd.background-image bg-image:
+src: $assets.files.assets.MOON.jpeg
+
+
+repeat: no-repeat
+position: center
+size: cover
